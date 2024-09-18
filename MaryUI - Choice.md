@@ -19,7 +19,7 @@ new class extends Component {
     public function searchCategory(string $value = ''): void
     {
         $selectedOption = Category::where('id', $this->category_id)->get();
-        $this->categorySearchable = Category::
+        $this->categorySearchable = Category::query()
             ->filterLike('name', $value)
             ->selectable()
             ->take(20)
