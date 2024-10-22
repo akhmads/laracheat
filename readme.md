@@ -7,3 +7,4 @@
 - Trait
 - Transaction
 - Validation
+- Rule
